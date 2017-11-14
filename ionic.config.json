@@ -1,0 +1,8 @@
+{
+  "name": "signalMe",
+  "app_id": "ab8dbcf2",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
