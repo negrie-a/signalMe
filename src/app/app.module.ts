@@ -6,13 +6,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { LoadingPage } from '../pages/loading/loading';
 import { SignalPage } from '../pages/signal/signal';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    SignalPage
+    SignalPage,
+    LoadingPage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { SignalPage } from '../pages/signal/signal';
   entryComponents: [
     MyApp,
     HomePage,
-    SignalPage
+    SignalPage,
+    LoadingPage
   ],
   providers: [
     StatusBar,
