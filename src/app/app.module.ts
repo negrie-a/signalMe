@@ -6,27 +6,25 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { LoadingPage } from '../pages/loading/loading';
 import { SignalPage } from '../pages/signal/signal';
-
+import { ComponentsModule } from '../components/components.module'
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    SignalPage,
-    LoadingPage
+    SignalPage
   ],
   imports: [
     BrowserModule,
+    ComponentsModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    SignalPage,
-    LoadingPage
+    SignalPage
   ],
   providers: [
     StatusBar,
