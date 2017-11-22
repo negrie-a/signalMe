@@ -1,15 +1,21 @@
 <ion-navbar>
-  <button ion-button icon-only menuToggle>
-    <ion-icon name="menu"></ion-icon>
-  </button>
-
-  <ion-title class="main-title">
-    {{title}}
-  </ion-title>
-
-  <ion-buttons end>
-    <button ion-button icon-only (click)="openModal()">
-      <ion-icon name="options"></ion-icon>
-    </button>
-  </ion-buttons>
+  <ion-row>
+    <ion-col align-self-start>
+      <ion-buttons start>
+        <button ion-button icon-only>
+          <img src="./assets/icon/tabs/avatar.png" alt="Smiley face" height="25" width="25">
+        </button>
+      </ion-buttons>
+    </ion-col>
+    <ion-title text-center>
+      {{title}}
+    </ion-title>
+    <ion-col align-self-end>
+      <ion-buttons end>
+        <button ion-button icon-only>
+          <img src="./assets/icon/tabs/balloon.png" alt="Smiley face" height="25" width="25">
+        </button>
+      </ion-buttons>
+    </ion-col>
+  </ion-row>
 </ion-navbar>
